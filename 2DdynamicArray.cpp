@@ -1,4 +1,5 @@
 #include<iostream>
+#include <iomanip> 
 using namespace std; 
 
 
@@ -44,7 +45,7 @@ void print_2D_array(int** p, int rows, int columns) {
 	{
 		for (int column = 0; column < columns; column++)
 		{
-			cout << p[row][column];
+			cout <<setw(5)<<  p[row][column];
 		}
 		cout << "\n"; 
 	}
